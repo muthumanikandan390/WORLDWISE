@@ -9,7 +9,7 @@ import "./index.css"
 import CityList from "./components/CityList"
 import Form from "./components/Form"
 import City from "./components/City"
-import { useState , useEffect } from "react"
+
 import CountriesList from "./components/CountriesList"
 import { CitiesProvider } from "./contexts/CitiesContext"
 
