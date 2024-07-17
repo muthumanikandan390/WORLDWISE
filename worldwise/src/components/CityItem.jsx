@@ -19,6 +19,11 @@ function CityItem({city}) {
   const { date , position , id } = city
   console.log(position)
 
+  function handleClick(e){
+    e.preventDefault()
+    console.log("hello")
+  }
+
 
 
   console.log(city)
@@ -28,7 +33,7 @@ function CityItem({city}) {
       <span className={styles.emoji}>{city.emoji}</span>
       <h3 className={styles.name}>{city.cityName}</h3>
       <time className={styles.date}> ( {formatDate(date)} ) </time>
-      <button className={styles.deleteBtn}>&times;</button>
+      <button className={styles.deleteBtn} onClick={handleClick}>&times;</button>
       </Link>
 
     </li>
